@@ -94,5 +94,8 @@ export function detectedOS () {
     if (ua.indexOf('Linux') >= 0) {
         return 'Linux'
     }
+    if(ua.indexOf('X11') >=0){
+      return 'Unix'
+    }
     return 'Unknown'
 }
